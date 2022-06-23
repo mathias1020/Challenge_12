@@ -4,11 +4,7 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The purpose of this analysis was to build a model that is capable of accurately classifying the creditworthiness of a potential borrower based on historical data.  Standard loan data was used as the input for the analysis including: loan amount, interest rate, income, debt, and derogatory credit history.  The output of the model was binary, either the borrower was categorized as creditworthy or high-risk.  The challenge in the data is striking the right balance to be sensitive enough to correctly identify high risk loans, but not so sensitive that healthy loans are declined costing the company revenue.  Additionally, because most loans are healthy, there is an imbalance in the data that could bias the model.  To counter this, two models were trained.  One model with the original data, and one model with resampled data to address the imbalance.  
 
 ## Results
 
