@@ -11,17 +11,23 @@ The purpose of this analysis was to build a model that is capable of accurately 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
+  * Accuracy - 95.2%
+  * Precision: 
+      * Healthy - 99.7%
+      * High Risk - 84.7%
+  * Recall:
+      * Healthy Loans - 99.5%
+      * High Risk Loans - 90.9%
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+   * Accuracy -  99.4%
+   * Precision: 
+      * Healthy - 99.98%
+      * High Risk - 84.1%
+   * Recall:
+      * Healthy Loans - 99.4%
+      * High Risk Loans: - 99.4%
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+My recommendation is to use model 2 with resampled data.  The reason is that it strikes a healthy balance with regard to sensitivity to detecting high risk loans.  While the model did incorrectly identify an additional 14 loans as high risk, representing lost revenue to the company, it correctly identified an additional 52 loans as being high risk.  The assumption to my recommendation is that the the opportunity cost of the lost loans is more than offset by being able to accurately price or decline the additional 52 high risk loans in this analysis.  
